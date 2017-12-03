@@ -1,0 +1,107 @@
+designWidth=1440
+gird = 90
+px2rem(px)
+  return unit(px * 320 / designWidth / 20, 'rem')
+
+/**
+ * px转换rem功能
+ * @param {tuple} list 需要被转换的数据，单个或多个
+ * 例：
+ *  margin $px2rem( 20px 30px 10px 5px )
+ */
+$px2rem( list )
+    rem = designWidth / gird
+    for i in 0...length( list )
+        list[i] = round( operate( '/', unit( list[i], '' ), rem ) * 1rem, 2 )
+    return list
+
+ /*还原默认px规则*/
+$px2rem_old( list )
+    return list
+/*
+ * 设置字号功能，不需要在加“font-size”前缀
+ * @param {Number} px  需要被转换的字号，设计图测量的字号
+ * @param {Number} dpr 设计图的放大比率，默认：2
+ * 例：
+ *  $fontSize( 12px )
+ */
+$fontSize( px, dpr = 2 )
+    font-size: ( px / dpr ) * 1px
+
+    [data-dpr='2'] &
+        font-size: @font-size * 2px
+
+    [data-dpr='3'] &
+        font-size: @font-size * 3px
+
+/*自定义颜色*/
+$color( $usage ) {
+    if ($usage == blue-g-1) {
+        return linear-gradient( 180deg, #1e225e, #0f132b )
+    }
+    if ($usage == blue-1) {
+        return #0E113A
+    }
+    if ($usage == blue-2) {
+        return #1A237E
+    }
+    if ($usage == blue-3) {
+        return #1A237E
+    }
+    if ($usage == gray-1) {
+        return #C5CAE9
+    }
+    if ($usage == gray-2) {
+        return #E8EAF6
+    }
+    if ($usage == gray-3) {
+        return #F4F5FB
+    }
+    if ($usage == line-1) {
+        return #F1F3F4
+    }
+    if ($usage == line-2) {
+        return #F0F3F5
+    }
+    if ($usage == line-white) {
+        return #FFF
+    }
+    if ($usage == timeline-green) {
+        return #bde492
+    }
+    if ($usage == font-1) {
+        return #333333
+    }
+    if ($usage == font-2) {
+        return #666666
+    }
+    if ($usage == font-3) {
+        return #999999
+    }
+    if ($usage == yellow-1) {
+        return #FFF7ED
+    }
+    if ($usage == red-1) {
+        return #fa596d
+    }
+    /*菜单激活状态色*/
+    if ($usage == menu-active) {
+        return #171d75
+    }
+    /*菜单背景色*/
+    if ($usage == menu-bg) {
+        return #e5e7f5
+    }
+    /*菜单二级背景色*/
+    if ($usage == menu-sub-bg) {
+        return #bdc2e7
+    }
+    /*全局背景色*/
+    if ($usage == c-bg) {
+        return #e5e7f5
+    }
+    /*购物车字体颜色*/
+    if ($usage == s-car) {
+        return #2D316C
+    }
+}

@@ -1,0 +1,515 @@
+{
+    "entry": {
+        "app": "./src/main.js"
+    },
+    "output": {
+        "path": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/dist",
+        "filename": "static/js/[name].[chunkhash].js",
+        "chunkFilename": "static/js/[name].[chunkhash].js"
+    },
+    "resolve": {
+        "extensions": [
+            ".js",
+            ".vue",
+            ".json"
+        ],
+        "alias": {
+            "vue$": "vue/dist/vue.esm.js",
+            "@": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/src",
+            "::libs": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/src/libs",
+            "::mod": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/src/mod",
+            "::pages": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/src/pages"
+        }
+    },
+    "module": {
+        "rules": [
+            {
+                "test": {},
+                "loader": "eslint-loader",
+                "enforce": "pre",
+                "include": [
+                    "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/src",
+                    "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/test"
+                ],
+                "options": {}
+            },
+            {
+                "test": {},
+                "loader": "vue-loader",
+                "options": {
+                    "loaders": {
+                        "css": [
+                            {
+                                "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "postcss": [
+                            {
+                                "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "less": [
+                            {
+                                "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "less-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "sass": [
+                            {
+                                "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "sass-loader",
+                                "options": {
+                                    "indentedSyntax": true,
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "scss": [
+                            {
+                                "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "sass-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "stylus": [
+                            {
+                                "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "stylus-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "styl": [
+                            {
+                                "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                                "options": {
+                                    "omit": 1,
+                                    "remove": true
+                                }
+                            },
+                            {
+                                "loader": "vue-style-loader"
+                            },
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": true,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "stylus-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "test": {},
+                "loader": "babel-loader",
+                "include": [
+                    "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/src",
+                    "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/test"
+                ]
+            },
+            {
+                "test": {},
+                "loader": "url-loader",
+                "options": {
+                    "limit": 10000,
+                    "name": "static/img/[name].[hash:7].[ext]"
+                }
+            },
+            {
+                "test": {},
+                "loader": "pug-loader",
+                "query": {
+                    "pretty": true,
+                    "locals": {}
+                }
+            },
+            {
+                "test": {},
+                "loader": "url-loader",
+                "options": {
+                    "limit": 10000,
+                    "name": "static/fonts/[name].[hash:7].[ext]"
+                }
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "less-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "sass-loader",
+                        "options": {
+                            "indentedSyntax": true,
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "sass-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "stylus-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    {
+                        "loader": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_extract-text-webpack-plugin@2.1.2@extract-text-webpack-plugin/loader.js",
+                        "options": {
+                            "omit": 1,
+                            "remove": true
+                        }
+                    },
+                    {
+                        "loader": "vue-style-loader"
+                    },
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": true,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "stylus-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "devtool": false,
+    "plugins": [
+        {
+            "definitions": {
+                "process.env": {
+                    "NODE_ENV": "\"production\""
+                }
+            }
+        },
+        {
+            "options": {
+                "compress": {
+                    "warnings": false
+                },
+                "sourceMap": true
+            }
+        },
+        {
+            "filename": "static/css/[name].[contenthash].css",
+            "id": 1,
+            "options": {}
+        },
+        {
+            "options": {
+                "cssProcessorOptions": {
+                    "safe": true
+                },
+                "assetNameRegExp": {},
+                "canPrint": true
+            }
+        },
+        {
+            "options": {
+                "template": "src/App.pug",
+                "filename": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/dist/index.html",
+                "hash": false,
+                "inject": true,
+                "compile": true,
+                "favicon": false,
+                "minify": {
+                    "removeComments": true,
+                    "collapseWhitespace": true,
+                    "removeAttributeQuotes": true
+                },
+                "cache": true,
+                "showErrors": true,
+                "chunks": "all",
+                "excludeChunks": [],
+                "title": "Webpack App",
+                "xhtml": false,
+                "chunksSortMode": "dependency"
+            }
+        },
+        {
+            "options": {
+                "hashFunction": "md5",
+                "hashDigest": "base64",
+                "hashDigestLength": 4
+            }
+        },
+        {
+            "chunkNames": [
+                "vendor"
+            ],
+            "ident": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_webpack@2.7.0@webpack/lib/optimize/CommonsChunkPlugin.js0"
+        },
+        {
+            "chunkNames": [
+                "manifest"
+            ],
+            "selectedChunks": [
+                "vendor"
+            ],
+            "ident": "/Users/ryan/company_work/outPro/hotelManager/resources/vue2-manage-master/node_modules/_webpack@2.7.0@webpack/lib/optimize/CommonsChunkPlugin.js1"
+        },
+        {},
+        {
+            "asset": "[path].gz[query]",
+            "filename": false,
+            "compressionOptions": {
+                "level": 9
+            },
+            "test": {},
+            "threshold": 10240,
+            "minRatio": 0.8,
+            "deleteOriginalAssets": false
+        }
+    ]
+}

@@ -1,0 +1,351 @@
+{
+    "entry": {
+        "app": [
+            "./build/dev-client",
+            "./src/main.js"
+        ]
+    },
+    "output": {
+        "path": "/Users/ryan/company_work/outPro/hotelManager/project/sale-staff/dist",
+        "filename": "[name].js",
+        "publicPath": "/"
+    },
+    "resolve": {
+        "extensions": [
+            ".js",
+            ".vue",
+            ".json"
+        ],
+        "alias": {
+            "vue$": "vue/dist/vue.esm.js",
+            "@": "/Users/ryan/company_work/outPro/hotelManager/project/sale-staff/src",
+            "@node_modules": "/Users/ryan/company_work/outPro/hotelManager/project/sale-staff/node_modules",
+            "::libs": "/Users/ryan/company_work/outPro/hotelManager/project/sale-staff/src/libs",
+            "::mod": "/Users/ryan/company_work/outPro/hotelManager/project/sale-staff/src/mod",
+            "::pages": "/Users/ryan/company_work/outPro/hotelManager/project/sale-staff/src/pages",
+            "::assets": "/Users/ryan/company_work/outPro/hotelManager/project/sale-staff/src/assets"
+        }
+    },
+    "module": {
+        "rules": [
+            {
+                "test": {},
+                "loader": "eslint-loader",
+                "enforce": "pre",
+                "include": [
+                    "/Users/ryan/company_work/outPro/hotelManager/project/sale-staff/src",
+                    "/Users/ryan/company_work/outPro/hotelManager/project/sale-staff/test"
+                ],
+                "options": {}
+            },
+            {
+                "test": {},
+                "loader": "vue-loader",
+                "options": {
+                    "loaders": {
+                        "css": [
+                            "vue-style-loader",
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": false,
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "postcss": [
+                            "vue-style-loader",
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": false,
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "less": [
+                            "vue-style-loader",
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": false,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "less-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "sass": [
+                            "vue-style-loader",
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": false,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "sass-loader",
+                                "options": {
+                                    "indentedSyntax": true,
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "scss": [
+                            "vue-style-loader",
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": false,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "sass-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "stylus": [
+                            "vue-style-loader",
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": false,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "stylus-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ],
+                        "styl": [
+                            "vue-style-loader",
+                            {
+                                "loader": "css-loader",
+                                "options": {
+                                    "minimize": false,
+                                    "sourceMap": false
+                                }
+                            },
+                            {
+                                "loader": "stylus-loader",
+                                "options": {
+                                    "sourceMap": false
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "test": {},
+                "loader": "babel-loader",
+                "include": [
+                    "/Users/ryan/company_work/outPro/hotelManager/project/sale-staff/src",
+                    "/Users/ryan/company_work/outPro/hotelManager/project/sale-staff/test"
+                ]
+            },
+            {
+                "test": {},
+                "loader": "url-loader",
+                "options": {
+                    "limit": 10000,
+                    "name": "static/img/[name].[hash:7].[ext]"
+                }
+            },
+            {
+                "test": {},
+                "loader": "pug-loader",
+                "query": {
+                    "pretty": true,
+                    "locals": {}
+                }
+            },
+            {
+                "test": {},
+                "loader": "url-loader",
+                "options": {
+                    "limit": 10000,
+                    "name": "static/fonts/[name].[hash:7].[ext]"
+                }
+            },
+            {
+                "test": {},
+                "use": [
+                    "vue-style-loader",
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": false,
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    "vue-style-loader",
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": false,
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    "vue-style-loader",
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": false,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "less-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    "vue-style-loader",
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": false,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "sass-loader",
+                        "options": {
+                            "indentedSyntax": true,
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    "vue-style-loader",
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": false,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "sass-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    "vue-style-loader",
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": false,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "stylus-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    "vue-style-loader",
+                    {
+                        "loader": "css-loader",
+                        "options": {
+                            "minimize": false,
+                            "sourceMap": false
+                        }
+                    },
+                    {
+                        "loader": "stylus-loader",
+                        "options": {
+                            "sourceMap": false
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "devtool": "#cheap-module-eval-source-map",
+    "plugins": [
+        {
+            "definitions": {
+                "process.env": {
+                    "NODE_ENV": "\"development\""
+                }
+            }
+        },
+        {
+            "fullBuildTimeout": 200
+        },
+        {},
+        {
+            "options": {
+                "template": "src/App.pug",
+                "filename": "index.html",
+                "hash": false,
+                "inject": true,
+                "compile": true,
+                "favicon": false,
+                "minify": false,
+                "cache": true,
+                "showErrors": true,
+                "chunks": "all",
+                "excludeChunks": [],
+                "title": "Webpack App",
+                "xhtml": false
+            }
+        },
+        {
+            "compilationSuccessInfo": {},
+            "shouldClearConsole": true,
+            "formatters": [
+                null,
+                null,
+                null
+            ],
+            "transformers": [
+                null,
+                null,
+                null
+            ]
+        }
+    ]
+}
